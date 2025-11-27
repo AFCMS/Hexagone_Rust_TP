@@ -1,0 +1,5 @@
+[target.'cfg(windows)']
+rustflags = ["-C", "target-cpu=native"]
+
+[target.'cfg(unix)']
+rustflags = ["-C", "target-cpu=native"]
