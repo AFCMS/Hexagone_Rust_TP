@@ -120,12 +120,12 @@ fn prompt_retourner_livre(bib: &mut Bibliotheque) {
 fn main() {
     let mut bib = Bibliotheque::default();
 
-    bib.livres.push(Livre {
-        titre: String::from("Le Petit Prince"),
-        auteur: String::from("Antoine de Saint-Exupéry"),
-        annee: 1943,
+    /* bib.livres.push(Livre {
+        titre: String::from("1985"),
+        auteur: String::from("George Orwell"),
+        annee: 1234,
         disponible: true,
-    });
+    }); */
 
     println!("======Bibliothèque======");
     println!("1. Ajouter un livre");
