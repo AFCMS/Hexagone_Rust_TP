@@ -1,6 +1,6 @@
 # Hexagone - TP Rust
 
-Deux struct principales: `Livre` et `Bibliotheque`.
+Deux struct : `Livre` et `Bibliotheque`.
 
 ```mermaid
 classDiagram
@@ -24,6 +24,6 @@ La logique d'affichage et d'input utilisateur est volontairement séparée dans 
 
 Pour simplifier la construction de `Bibliotheque` et éviter de passer un tableau vide à chaque fois, on dérive le trait `Default` pour cette struct.
 
-L'affichage des livres se fait simplement en dérivant le trait `Debug` pour la struct `Livre`.
+L'affichage des livres se fait simplement en dérivant le trait `Debug` pour la struct `Livre` (ce qui m'a fait désactiver les warnings dead_code).
 
 Pour le fun, j'ai ajouté un mini pipeline GitHub Actions qui compile le projet à chaque push Git, et j'ai ajouté plusieurs optimisations de compilation dans les fichiers `Cargo.toml` et `.cargo/config.toml` (ciblage de l'architecture CPU native, optimisation plus aggressive, etc).
